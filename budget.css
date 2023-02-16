@@ -1,0 +1,159 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+h1{font-size: 20px;}
+
+form{padding-top: 20px;}
+
+#submit{
+    background-color: #63223D;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-family: 'Comfortaa', cursive;
+}
+#submit:hover{
+    cursor: pointer;
+    color: #63223D;
+    background-color: white;
+}
+
+input{
+    border:none;
+    border-radius: 20px;
+
+}
+
+.container{
+    background-color: #F5DAE5;
+    border: 10px double #B33D6D;
+    border-radius: 40px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#hourly{
+    width: 50px;
+    height: 30px;
+}
+.percentages-section{
+    padding: 0 100px;
+    
+}
+.output-div{
+    display: flex;
+    
+}
+.output-div p{
+    padding: 10px;
+}
+.output-div input{
+    width: 40px;
+    height: 30px;
+    
+}
+
+.output-div-2{
+    display: flex;
+    justify-content: center;
+}
+
+.output-p{
+    color: #63223D;
+    font-weight: bold;
+}
+
+.salary-based{
+    display: none;
+    position: absolute;
+    max-width: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 130px;
+    z-index: 100;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#hourly-title{
+    background-color: #B33D6D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+#salary-title{
+    cursor: pointer;
+    color: #63223D;
+    background-color: white;
+}
+
+/* #salary:focus  #salary-based-div{
+    display: block;
+} */
+
+/* .add{
+    background-color: #B33D6D;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+} */
+
+#submit2{
+    background-color: #63223D;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+
+#submit2:hover{
+    cursor: pointer;
+    color: #63223D;
+    background-color: white;
+}
+
+#calc-debt-btn{
+    background-color:#63223D;
+    color: white;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 15px;
+}
+#calc-debt-btn:hover{
+    color: #63223D;
+    background-color: white;
+}
+#debt-input{
+    height: 20px;
+    margin: 15px 10px 0 10px;
+}
+
+.fixed-payment{
+    /* display: none; */
+    
+}
+
+#debt-output{
+    display: none;
+}
+
+#debt-amount{
+    width: 80px;
+    margin-top: 15px;
+}

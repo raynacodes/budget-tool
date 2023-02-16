@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <title>Budget Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Budget Calculator</h1> 
+    <p>Based on</p> 
+    <input type="button" id="hourly-title" value="Hourly Wage" onclick="calcOriginal()"> 
+    <input type="button" id="salary-title" value="Salary" onclick="changeCalc()">
+
+    <div class="container">
+        <form>
+            <label for="hourly">Enter hourly wage:</label>
+            <input type="number" name="hourly" id="hourly">
+            <input type="button" name="submit" id="submit" value="Calculate" onclick="calculateBudget()">
+        </form>
+    
+        <div class="output-div">
+            <p>Salary before tax: $</p>
+            <p id="salary-output" class="output-p"></p>
+        </div>
+    
+        <div class="output-div">
+            <p>Estimated after tax (based on 30%): $</p>
+            <p id="after-tax-output" class="output-p"></p>
+        </div> 
+
+        <div class="output-div">
+            <p>Enter fixed payment: $</p>
+            <input type="number" name="debt-amount" id="debt-amount">
+            <p id="debt-output" class="output-p"></p>
+        </div>
+        
+        <div class="output-div">
+            <p>Monthly: $</p>
+            <p id="monthly-output" class="output-p"></p>
+        </div>
+    
+        <div class="percentages-section">
+
+            <div class="output-div">
+                <input type="number" name="rentP" id="rentP">
+                <label for="rentP">%</label>
+                <p>Rent: $</p>
+                <p id="rent-output" class="output-p"></p>
+            </div>
+        
+            <div class="output-div">
+                <input type="number" name="investP" id="investP">
+                <label for="investP">%</label>
+                <p>Invest: $</p>
+                <p id="invest-output" class="output-p"></p>
+            </div>
+        
+            <div class="output-div">
+                <input type="number" name="savingsP" id="savingsP">
+                <label for="savingsP">%</label>
+                <p>Savings: $</p>
+                <p id="savings-output" class="output-p"></p>
+            </div>
+        
+            <div class="output-div">
+                <input type="number" name="otherP" id="otherP">
+                <label for="otherP">%</label>
+                <p>Other Expenses: $</p>
+                <p id="other-output" class="output-p"></p>
+            </div>
+
+            
+
+            
+        </div>
+    
+        <div class="output-div">
+            <p>Leftover for Spending: $</p>
+            <p id="spending-output" class="output-p"></p>
+        </div>
+
+        <div class="output-div">
+            <p>Estimated Weekly Spending: $</p>
+            <p id="weekly-output" class="output-p"></p>
+        </div>
+    </div>
+
+    <div class="container salary-based" id="salary-based-div">
+        <form>
+            <label for="salary2">Salary (pre-tax): $</label>
+            <input type="number" name="salary2" id="salary2">
+            <input type="button" name="submit2" id="submit2" value="Calculate" onclick="calculateHour()">
+        </form>
+    
+        <div class="output-div">
+            <p>Hourly wage: $</p>
+            <p id="hourly-2-output" class="output-p"></p>
+        </div>
+    </div>
+
+    
+
+    <script src="budget.js"></script>
+</body>
+</html>
